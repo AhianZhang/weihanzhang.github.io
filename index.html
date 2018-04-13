@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="AhianZhang">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>示例</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- 主题样式 -->
+		<link rel="stylesheet" href="css/theme/league.css">
+		<!-- 语法高亮样式 -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- start -->
+				<!-- start -->
+				<!-- start -->
+				<!-- start -->
+				<!-- start -->
+				<!-- start -->
+				<!-- start -->
+				<!-- start -->
+
+				<!-- 一个section为一页，  -->
+				<section>
+					<img src="img/banner.png" style="margin-bottom: 100px;height:200px;" />
+					<h3>基于 java 的个人博客设计与实现</h3>
+					<div id="" style="text-align: left; margin-left: calc(50% - 200px);">
+						<h5>学院：计算机学院</h5>
+						<h5>班级：14 软件工程班</h5>
+						<h5>作者：张馨水</h5>
+					</div>
+
+				</section>
+
+				<!--WAHT-->
+				<section>
+					<section>
+						<h2>个人博客是什么</h2>
+						<p style="text-indent: 2em;text-align: left;"> 个人博客，是互联网发展的必然产物。博主可以每天在这个平台上发表公开文章、浏览文章、评论和删除文章。
+						</p>
+						<p style="text-indent: 2em;text-align: left;">
+							对于公司来说， 博客能够体现他们团队的活力和价值， 也能够帮助浏览者获取自己想要的信息； 但是对于个人来说， 一个优秀的博客能够提升自己的知名度， 帮助自己积累技术或者生活上的所见所得， 个人博客可以依托于如掘金、云栖社区、Medium 等国内外知名的社区； 也可以是 GitHub Page、WordPress、Solo 等通过简单部署就能搭建出来的个人博客。
+						</p>
+
+					</section>
+					<section data-background="img/juejin.png">
+					</section>
+					<section data-background="img/yq.png">
+					</section>
+					<section data-background="img/medium.png">
+					</section>
+					<section data-background="img/solo.png">
+					</section>
+					<section data-background="img/wp.png">
+					</section>
+					<section data-background="img/ghp.png">
+					</section>
+				</section>
+
+				<!--WHY-->
+				<section>
+					<h2>为什么要做个人博客</h2>
+					<p style="text-indent: 2em;text-align: left;">
+						一方面，为了巩固所学的知识，查漏补缺。 另一方面，在社区写博客固然方便简单，但是会有很多限制，有很多内容不适合在社区上发表， 所以自己搭建了一个 Java 语言的博客系统。 </p>
+				</section>
+
+				<section>
+					<h2> 怎样做个人博客</h2>
+					<p style="text-align: left;">
+						参考各种博客的架构和前端样式， 决定使用以下配置:
+					</p>
+					<ul>
+						<li>编辑器： IDEA</li>
+						<li>前端： BootStrap / JQuery / EasyUI</li>
+						<li>后端： Spring / SpringMVC / MyBatis</li>
+						<li>数据库：MySQL</li>
+					</ul>
+					<p style="text-align: left;">
+						先将后台模块建立起来，再建立前台页面，最后前后端联调。</p>
+				</section>
+
+				<section data-markdown>
+					## 论文内容概览 - 引言 - 开发环境介绍 - 分析阶段 - 设计阶段 - 代码阶段 - 测试阶段 - 结语、参考文献、致谢
+				</section>
+				<section>
+					<h2>引言</h2>
+					<p style="text-indent: 2em;text-align: left;">
+						这是一个互联网的时代，博客系统只是其中的一个产物， 像人工智能、大数据、区块链技术这些大的门类都成为了国家 重点关注的对象，但是在当下浮躁的社会，我们最需要的就是沉着冷静， 此时博客就发挥了很大的作用，它可以帮助我们沉淀自己，在写博客的时候 我们可以组织语言并且可以发现新的问题或者解决思路。做一个个人博客的 想法很早就有了，网上的博客就那么几种，用 Java 实现的就更少了， 所以我就使用 Java 自己实现了一个博客。
+
+					</p>
+
+				</section>
+				<section>
+					<h2>开发环境</h2>
+
+					<section>
+						<h3>所用技术</h3>
+						<ul>
+							<li class="fragment">Java</li>
+							<li class="fragment">Spring</li>
+							<li class="fragment">SpringMVC</li>
+							<li class="fragment">MyBatis</li>
+							<li class="fragment">Shiro</li>
+							<li class="fragment">Ajax</li>
+						</ul>
+					</section>
+					<section>
+						<h3>页面环境布局</h3>
+						<ul>
+							<li>BootStrap</li>
+							<li>EasyUI</li>
+						</ul>
+					</section>
+					<section>
+						<h3>开发工具及容器</h3>
+						<ul>
+							<li>IDEA</li>
+							<li>Tomcat</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>分析阶段</h2>
+					<!--可行性分析-->
+					<section>
+						<h3>技术可行性</h3>
+						<p style="text-indent: 2em;text-align: left;">
+							Java是一种强类型的高级语言独立运行与JVM虚拟中实现跨平台， 其次Java的扩展性很强，社区活跃是市场需求以及公司使用的第一大语言， 所以开发出来的Java版个人博客既有实用价值又有研究价值。
+						</p>
+					</section>
+					<!--社会可行性-->
+					<section>
+						<h3>社会可行性</h3>
+						<p style="text-indent: 2em;text-align: left;">
+
+							由于目前社会的生活节奏较快、方式单一、压力较大，有效的学习时间少之又少，此时写博客可以帮助人们活跃思维， 抒发情感或者记录所学所见的知识，有利于形成良好的社会风气。
+						</p>
+					</section>
+					<!--经济可行性-->
+					<section>
+						<h3>经济可行性</h3>
+						<p style="text-indent: 2em;text-align: left;">
+							因为本系统属于个体开发并且非商业用途，所以几乎不需要成本，但是却可以巩固知识和帮助他人。 所以这是一个开发风险极低、收益极大的系统。
+						</p>
+					</section>
+					<!--需求分析-->
+					<section>
+						<h3>需求分析</h3>
+						<p style="text-indent: 2em;text-align: left;">
+
+							为了实现响应式的页面所以该博客系统前台页面使用BootStrap做布局， 后台最重要的是数据处理，所以使用封装JQuery的EasyUI做布局， 富文本编辑器采用editormd，贴合实际环境； 为了加快用户的读取速度，在首次访问后会将公共数据放到 application 中； 使用Shiro做为博主登录的安全框架。 用户评论系统采用第三方的搜狐畅言插件。
+
+						</p>
+					</section>
+					<!--流程分析-->
+					<section>
+						<h3>流程分析</h3>
+						<img src="img/flow.png" />
+					</section>
+
+				</section>
+				<section>
+					<h2>设计阶段</h2>
+					<section>
+						<h3>概要设计</h3>
+						<img src="img/design.png" />
+					</section>
+					<section>
+						<div style="margin-top: 100px;">
+							<h3>详细设计</h3>
+							<ul style="font-size:30px;">
+								<li class="fragment">
+									<a href="#database">数据库设计</a>
+								</li>
+								<li class="fragment">
+									<a href="#front">前台界面设计</a>
+								</li>
+								<li class="fragment">
+									<a href="#create">博客创建模块</a>
+								</li>
+								<li class="fragment">
+									<a href="javascript:void()">博客修改模块</a>
+								</li>
+								<li class="fragment">
+									<a href="#delete">博客删除模块</a>
+								</li>
+								<li class="fragment">
+									<a href="#catalog">博客类别管理模块</a>
+								</li>
+								<li class="fragment">
+									<a href="#blogger">博主信息管理模块</a>
+								</li>
+								<li class="fragment">
+									<a href="#link">友情链接管理模块</a>
+								</li>
+								<li class="fragment">
+									<a href="#password">修改密码</a>
+								</li>
+								<li class="fragment">
+									<a href="javascript:void()">刷新缓存</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h3></h3>
+						<section></section>
+					</section>
+					<section>
+						<h3></h3></section>
+
+				</section>
+				<section>
+					<h2>代码阶段</h2>
+					<ul>
+						<li class="fragment">系统配置代码</li>
+						<li class="fragment">数据交互功能</li>
+						<li class="fragment">文件上传</li>
+						<li class="fragment">数据库映射</li>
+						<li class="fragment">Realm</li>
+						<li class="fragment">文本编辑功能</li>
+					</ul>
+
+				</section>
+				<section>
+					<h2>测试阶段</h2>
+					<ul>
+						<li class="fragment">单元测试</li>
+						<li class="fragment">黑盒测试</li>
+						<li class="fragment">接口测试</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>致谢</h2> 感谢各位老师能够听我讲完自己的系统，如有不足请及时提出
+
+				</section>
+				<section><h1>演示结束</h1></section>
+				<section></section>
+				<!-- section内必须嵌套两个section才会有垂直滚动效果 -->
+				<section id="database">
+					<a href="#/8/1"><img src="img/database.png" width="800px" />
+					</a>
+				</section>
+				<section id="front">
+					<a href="#/8/1"><img src="img/front.png" width="800px" /></a>
+
+				</section>
+				<section id="create">
+					<a href="#/8/1"><img src="img/create.png" width="800px" /></a>
+
+				</section>
+				<section id="delete">
+					<a href="#/8/1"><img src="img/delete.png" width="800px" /></a>
+
+				</section>
+				<section id="blogger">
+					<a href="#/8/1"><img src="img/blogger.png" width="800px" /></a>
+
+				</section>
+
+				<section id="catalog">
+					<a href="#/8/1"><img src="img/catalog.png" width="800px" /></a>
+
+				</section>
+				<section id="link">
+					<a href="#/8/1"><img src="img/links.png" width="800px" /></a>
+
+				</section>
+				<section id="password">
+					<a href="#/8/1"><img src="img/password.png" width="800px" /></a>
+					<img src="img/data_pwd.png" width="800px" />
+				</section>
+
+				<!-- end -->
+				<!-- end -->
+				<!-- end -->
+				<!-- end -->
+				<!-- end -->
+				<!-- end -->
+				<!-- end -->
+				<!-- end -->
+				<!-- end -->
+			</div>
+		</div>
+		<!-- 以下两元素缺一不可 -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'zoom', // 定义全局滑动效果None Fade Slide Convex Concave Zoom ，可在内部覆盖效果data-background-transition="zoom"
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [{
+						src: 'lib/js/classList.js',
+						condition: function() {
+							return !document.body.classList;
+						}
+					},
+					{
+						src: 'plugin/markdown/marked.js',
+						async: true,
+						condition: function() {
+							return !!document.querySelector('[data-markdown]');
+						}
+					},
+					{
+						src: 'plugin/markdown/markdown.js',
+						async: true,
+						condition: function() {
+							return !!document.querySelector('[data-markdown]');
+						}
+					},
+					{
+						src: 'plugin/highlight/highlight.js',
+						async: true,
+						callback: function() {
+							hljs.initHighlightingOnLoad();
+						}
+					},
+					{
+						src: 'plugin/notes/notes.js'
+					}
+				]
+			});
+		</script>
+	</body>
+
+</html>
