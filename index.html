@@ -37,6 +37,7 @@
 					<div id="" style="text-align: left; margin-left: calc(50% - 200px);">
 						<h5>学院：计算机学院</h5>
 						<h5>班级：14 软件工程班</h5>
+						<h5>导师：刘翠霞</h5>
 						<h5>作者：张馨水</h5>
 					</div>
 
@@ -77,7 +78,7 @@
 				<section>
 					<h2>为什么要做个人博客</h2>
 					<p style="text-indent: 2em;text-align: left;">
-						一方面，为了巩固所学的知识，查漏补缺。 另一方面，在社区写博客固然方便简单，但是会有很多限制，有很多内容不适合在社区上发表， 所以自己搭建了一个 Java 语言的博客系统。 </p>
+						一方面，为了巩固所学的知识，查漏补缺。 另一方面，在社区写博客固然方便简单，但是会有很多限制，比如有的内容不适合在社区上发表或者想要自定义一些模块， 所以自己搭建了一个 Java 语言的博客系统是一个不错的选择。 </p>
 				</section>
 
 				<section>
@@ -96,7 +97,7 @@
 				</section>
 
 				<section data-markdown>
-					## 论文内容概览 
+					## 内容概览 
 					- 引言 
 					- 开发环境介绍 
 					- 分析阶段 
@@ -108,7 +109,14 @@
 				<section>
 					<h2>引言</h2>
 					<p style="text-indent: 2em;text-align: left;">
-						这是一个互联网的时代，博客系统只是其中的一个产物， 像人工智能、大数据、区块链技术这些大的门类都成为了国家 重点关注的对象，但是在当下浮躁的社会，我们最需要的就是沉着冷静， 此时博客就发挥了很大的作用，它可以帮助我们沉淀自己，在写博客的时候 我们可以组织语言并且可以发现新的问题或者解决思路。做一个个人博客的 想法很早就有了，网上的博客就那么几种，用 Java 实现的就更少了， 所以我就使用 Java 自己实现了一个博客。
+						这是一个互联网的时代, 博客系统只是其中的一个产物，
+						像人工智能、大数据、区块链技术这些大的门类都成为了国家重点关注的对象，
+						但是在当下浮躁的社会，我们最需要的就是沉着冷静， 
+						此时博客就发挥了很大的作用，
+						它可以帮助我们沉淀自己，在写博客的时候 
+						我们可以组织语言并且可以发现新的问题或者解决思路。
+						做一个个人博客的 想法很早就有了，网上的博客就那么几种，
+						用 Java 实现的就更少了，所以我就使用 Java 自己实现了一个博客。
 
 					</p>
 
@@ -148,7 +156,7 @@
 					<section>
 						<h3>技术可行性</h3>
 						<p style="text-indent: 2em;text-align: left;">
-							Java是一种强类型的高级语言独立运行与JVM虚拟中实现跨平台， 其次Java的扩展性很强，社区活跃是市场需求以及公司使用的第一大语言， 所以开发出来的Java版个人博客既有实用价值又有研究价值。
+							Java是一种强类型的高级语言独立运行与JVM虚拟中实现跨平台， 其次Java的扩展性很强、社区活跃，是市场需求以及公司使用的第一大语言， 所以开发出来的Java版个人博客既有实用价值又有研究价值。
 						</p>
 					</section>
 					<!--社会可行性-->
@@ -163,7 +171,7 @@
 					<section>
 						<h3>经济可行性</h3>
 						<p style="text-indent: 2em;text-align: left;">
-							因为本系统属于个体开发并且非商业用途，所以几乎不需要成本，但是却可以巩固知识和帮助他人。 所以这是一个开发风险极低、收益极大的系统。
+							因为本系统属于个体开发并且非商业用途，遵循 MIT 协议，几乎不需要成本，但是却可以巩固知识和帮助他人。 所以这是一个开发风险极低、收益极大的系统。
 						</p>
 					</section>
 					<!--需求分析-->
@@ -171,7 +179,12 @@
 						<h3>需求分析</h3>
 						<p style="text-indent: 2em;text-align: left;">
 
-							为了实现响应式的页面所以该博客系统前台页面使用BootStrap做布局， 后台最重要的是数据处理，所以使用封装JQuery的EasyUI做布局， 富文本编辑器采用editormd，贴合实际环境； 为了加快用户的读取速度，在首次访问后会将公共数据放到 application 中； 使用Shiro做为博主登录的安全框架。 用户评论系统采用第三方的搜狐畅言插件。
+							为了实现响应式的页面, 该博客系统前台页面使用 BootStrap 做布局；
+							后台最重要的是数据处理，  所以使用封装 JQuery 的 EasyUI 做布局；			
+							富文本编辑器采用 editormd ，贴合实际环境； 
+							为了加快用户的读取速度，
+							在首次访问后会将公共数据放到 application 中；
+							使用 Shiro 做为博主登录的安全框架； 用户评论系统采用第三方的搜狐畅言插件。
 
 						</p>
 					</section>
@@ -202,7 +215,7 @@
 									<a href="#create">博客创建模块</a>
 								</li>
 								<li class="fragment">
-									<a href="javascript:void()">博客修改模块</a>
+									<a href="#update">博客修改模块</a>
 								</li>
 								<li class="fragment">
 									<a href="#delete">博客删除模块</a>
@@ -220,7 +233,7 @@
 									<a href="#password">修改密码</a>
 								</li>
 								<li class="fragment">
-									<a href="javascript:void()">刷新缓存</a>
+									<a href="#refresh">刷新缓存</a>
 								</li>
 							</ul>
 						</div>
@@ -229,12 +242,17 @@
 				<section>
 					<h2>代码阶段</h2>
 					<ul>
-						<li class="fragment">系统配置代码</li>
-						<li class="fragment">数据交互功能</li>
-						<li class="fragment">文件上传</li>
-						<li class="fragment">数据库映射</li>
-						<li class="fragment">Realm</li>
-						<li class="fragment">文本编辑功能</li>
+						<li class="fragment">系统配置
+							<font size="3">web.xml/applicationContext.xml/spring_mvc.xml
+							/mybatis_config.xml/log4j.xml</font>
+						</li>
+						<li class="fragment">数据交互功能
+						<font size="3">JQuery Ajax</font>
+						</li>
+						<li class="fragment">图片上传<font size="3">layUI/commons-io/commons-fileupload</font></li>
+						<li class="fragment">数据库映射<font size="3"> Mapper</font></li>
+						<li class="fragment">Realm<font size="3"> doGetAuthorizationInfo/doGetAuthenticationInfo</font></li>
+						<li class="fragment">文本编辑功能<font size="3"> 	MarkDown</font></li>
 					</ul>
 
 				</section>
@@ -249,44 +267,67 @@
 				</section>
 
 				<section>
-					<h2>致谢</h2> 感谢各位老师能够听我讲完自己的系统，如有不足请及时提出
+					<h2>致谢</h2> <p style="text-indent: 2em;text-align: left;">感谢大学四年对我有过帮助的老师和同学，感谢我的导师刘翠霞老师从
+					开题报告开始就一直耐心的指点
+					感谢在座的评审老师能够点评我的项目</p>
+					
 
 				</section>
-				<section><h1>演示结束</h1></section>
+				<section><h1>演示结束</h1>
+					<h5>此演示文稿地址：<a href="">GitHub</a></h5>
+					<h1>- End -</h1>
+				</section>
 				<section></section>
 				<!-- section内必须嵌套两个section才会有垂直滚动效果 -->
 				<section id="database">
+					数据库设计模块	
 					<a href="#/8/1"><img src="img/database.png" width="800px" />
 					</a>
 				</section>
 				<section id="front">
+					前台界面设计
 					<a href="#/8/1"><img src="img/front.png" width="800px" /></a>
 
 				</section>
 				<section id="create">
+					博客创建模块
 					<a href="#/8/1"><img src="img/create.png" width="800px" /></a>
 
 				</section>
 				<section id="delete">
+					博客删除模块
 					<a href="#/8/1"><img src="img/delete.png" width="800px" /></a>
 
 				</section>
 				<section id="blogger">
+					博主信息管理模块
 					<a href="#/8/1"><img src="img/blogger.png" width="800px" /></a>
 
 				</section>
+				<section id="update">
+					博客修改模块
+					<a href="#/8/1"><img src="img/update.gif" /></p>
+				</section>
 
 				<section id="catalog">
+					博客类别管理模块
 					<a href="#/8/1"><img src="img/catalog.png" width="800px" /></a>
 
 				</section>
 				<section id="link">
+					友情链接管理模块
 					<a href="#/8/1"><img src="img/links.png" width="800px" /></a>
 
 				</section>
 				<section id="password">
+					修改密码
 					<a href="#/8/1"><img src="img/password.png" width="800px" /></a>
 					<img src="img/data_pwd.png" width="800px" />
+				</section>
+				<section id="refresh">
+					刷新缓存
+					<a href="#/8/1"><img src="img/refresh.png" width="800px" /></a>
+
 				</section>
 
 				<!-- end -->
@@ -309,7 +350,7 @@
 				progress: true,
 				history: true,
 				center: true,
-				transition: 'zoom', // 定义全局滑动效果None Fade Slide Convex Concave Zoom ，可在内部覆盖效果data-background-transition="zoom"
+				transition: 'slide', // 定义全局滑动效果None Fade Slide Convex Concave Zoom ，可在内部覆盖效果data-background-transition="zoom"
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [{
